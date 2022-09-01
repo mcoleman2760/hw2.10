@@ -11,12 +11,12 @@ using namespace std;
 int main() 
 {
   
-int gallons;
-int eff;
-int price;
-int cost;
-int distance;  
-int multef;  
+double gallons;
+double eff;
+double price;
+double cost;
+double distance;  
+double multef;  
 
   cout << "What is the number of gallons of gas in the tank?" << endl;
   cin >> gallons;
@@ -28,9 +28,10 @@ int multef;
 multef = (100 / eff ) ; 
 cost = multef * price;
 distance = eff * gallons;
+
   
-  cout << cost << endl;
-  cout << distance << endl;
+  cout << "It cost $" << cost << " to drive 100 miles" << endl;
+  cout << "The car can go " << distance << " miles" << endl;
   
 return 0;
   }
