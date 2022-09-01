@@ -4,3 +4,33 @@ Course: CSCI-135
 Instructor: Genady Maryash
 Assignment: HW E2.10
   */
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+  
+int gallons;
+int eff;
+int price;
+int cost;
+int distance;  
+int multef;  
+
+  cout << "What is the number of gallons of gas in the tank?" << endl;
+  cin >> gallons;
+  cout << "What is the fuel efficiency in miles per gallon?" << endl;
+  cin >> eff;
+  cout << "What is the price of gas per gallon?" << endl;
+  cin >> price;
+
+multef = (100 / eff ) ; 
+cost = multef * price;
+distance = eff * gallons;
+  
+  cout << cost << endl;
+  cout << distance << endl;
+  
+return 0;
+  }
