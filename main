@@ -11,12 +11,12 @@ using namespace std;
 int main() 
 {
   
-double gallons;
-double eff;
-double price;
-double cost;
-double distance;  
-double multef;  
+double gallons = 0;
+double eff = 0;
+double price = 0;
+double cost = 0;
+double distance = 0;  
+double multef = 0;  
 
   std::cout << "What is the number of gallons of gas in the tank?" << endl;
   std::cin >> gallons;
