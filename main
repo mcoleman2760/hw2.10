@@ -18,20 +18,20 @@ double cost = 0;
 double distance = 0;  
 double multef = 0;  
 
-  std::cout << "What is the number of gallons of gas in the tank?" << endl;
-  std::cin >> gallons;
-  std::cout << "What is the fuel efficiency in miles per gallon?" << endl;
-  std::cin >> eff;
-  std::cout << "What is the price of gas per gallon?" << endl;
-  std::cin >> price;
+  cout << "What is the number of gallons of gas in the tank?" << endl;
+  cin >> gallons;
+  cout << "What is the fuel efficiency in miles per gallon?" << endl;
+  cin >> eff;
+  cout << "What is the price of gas per gallon?" << endl;
+  cin >> price;
 
 multef = (100 / eff ) ; 
 cost = multef * price;
 distance = eff * gallons;
 
   
-  std::cout << "It cost $" << cost << " to drive 100 miles" << endl;
-  std::cout << "The car can go " << distance << " miles" << endl;
+  cout << "It cost $" << cost << " to drive 100 miles" << endl;
+  cout << "The car can go " << distance << " miles" << endl;
   
 return 0;
   }
